@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destination Listings</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1 style="text-align: center;">TravelEase Travel Booking Website</h1>
+        <hr>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinationlisting.html">Destinations</a></li>
+            <li><a href="booking.html">Bookings</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Travel Options</a>
+              <div class="dropdown-content">
+                <a href="#">Flights</a>
+                <a href="#">Hotels</a>
+                <a href="#">Car Rentals</a>
+                <a href="#">Tours</a>
+              </div>
+            </li>
+          </ul>
+          <form id="search-form" action="#" method="GET">
+            <input type="text" name="destination" placeholder="Enter destination">
+            <input type="date" name="travel-date" placeholder="Travel date">
+            <button type="submit">Search</button>
+          </form>
+        </nav>
+      </header>
+
+  <main>
+    <h2 style="text-align: center;">Destinations</h2>
+    <br>
+    <hr>
+    <h2>Refine Your Search</h2>
+    <section class="filters">
+      
+      <div class="filter-group">
+        <label for="location-filter">Location:</label>
+        <select id="location-filter">
+          <option value="all">All</option>
+          <option value="kashmir">Kashmir</option>
+          <option value="himachal">Himachal</option>
+          <option value="kerla">Kerla</option>
+          <option value="goa">Goa</option>
+          
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="price-filter">Price Range:</label>
+        <select id="price-filter">
+          <option value="all">All</option>
+          <option value="budget">Budget</option>
+          <option value="moderate">Moderate</option>
+          <option value="luxury">Luxury</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="activity-filter">Activity Type:</label>
+        <select id="activity-filter">
+          <option value="all">All</option>
+          <option value="adventure">Adventure</option>
+          <option value="beach">Beach</option>
+          <option value="cultural">Cultural</option>
+          <option value="nature">Nature</option>
+          <option value="sightseeing">Sightseeing</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="destination-listings">
+      
+
+      <div class="destination-container">
+      <div class="destination-card">
+        <img src="images/kashmir.jpeg" alt="Kashmir">
+        <h3>Kashmir</h3>
+        <p>Experience the serene beauty of Kashmir with its breathtaking landscapes.</p>
+        <p>Starting from $1500</p>
+        <a href="kashmir.html" class="btn">View Details</a>
+      </div>
+    
+
+      <div class="destination-card">
+        <img src="images/himachal.jpg" alt="Himachal">
+        <h3>Himachal</h3>
+        <p>Discover the picturesque beauty of Himachal with its majestic mountains and lush valleys.</p>
+        <p>Starting from $1200</p>
+        <a href="himachal.html" class="btn">View Details</a>
+      </div>
+      
+      <div class="destination-card">
+        <img src="images/kerla.jpg" alt="Kerla">
+        <h3>Kerla</h3>
+        <p>Experience the backwaters and vibrant culture of Kerla in South India.</p>
+        <p>Starting from $1500</p>
+        <a href="kerla.html" class="btn">View Details</a>
+      </div>
+      
+      <div class="destination-card">
+        <img src="images/Y.jpg" alt="Goa">
+        <h3>Goa</h3>
+        <p>Relax on the beautiful beaches and enjoy the vibrant nightlife of Goa.</p>
+        <p>Starting from $1200</p>
+        <a href="goa.html" class="btn">View Details</a>
+      </div>
+      
+      
+      
+    </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Destination Listings. All rights reserved.</p>
+  </footer>
+</body>
+</html>

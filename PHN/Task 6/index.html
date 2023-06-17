@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CareHealthHub.com - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="images/logo-removebg-preview.png" alt="Hospital Logo">
+      </div>
+      <div class="header-content">
+        <h1>Welcome to CareHealthHub.com</h1>
+        <p class="subheading">Advanced Medical Technologies | Exceptional Care | Welcoming Environment</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+  
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-image">
+        <img src="images/hos.jpg" alt="Hospital Image">
+      </div>
+      <div class="hero-content">
+        <h2>Providing Compassionate Care</h2>
+        <p>We are dedicated to improving the health and well-being of our patients by offering advanced medical treatments and personalized care.</p>
+        <a href="about.html">Learn More</a>
+      </div>
+    </section>
+
+    <section class="departments">
+      <div class="section-heading">
+        <h2 style="font-size:xx-large;">Departments</h2>
+      </div>
+      <div class="departments-list">
+        <ul class="department-grid">
+          <li>
+            <img src="images/c.png" alt="Doctor Image">
+            <h3>Cardiology</h3>
+            <p>Services: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Department Head: Dr. John Smith</p>
+            <p>Contact: <a href="tel:+123456789">+123456789</a></p>
+          </li>
+          <li>
+            <img src="images/n.png" alt="Doctor Image">
+            <h3>Neurology</h3>
+            <p>Services: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Department Head: Dr. Emily Johnson</p>
+            <p>Contact: <a href="tel:+987654321">+987654321</a></p>
+          </li>
+          <li>
+            <img src="images/p.png" alt="Doctor Image">
+            <h3>Pediatrics</h3>
+            <p>Services: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Department Head: Dr. Sarah Davis</p>
+            <p>Contact: <a href="tel:+345678912">+345678912</a></p>
+          </li>
+
+          <li>
+            <img src="images/d.jpg" alt="Doctor Image">
+            <h3>Dermatology</h3>
+            <p>Services: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Department Head: Dr. Laura Roberts</p>
+            <p>Contact: <a href="tel:+876543210">+876543210</a></p>
+          </li>
+          
+        </ul>
+      </div>
+    </section>
+    
+
+    <section class="doctors-staff">
+      <div class="section-heading">
+        <h2 style="font-size: xx-large;">Doctors and Staff</h2>
+      </div>
+      <div class="search-form">
+        <input type="text" id="search-input" placeholder="Search by name, specialization, or department">
+        <button onclick="searchDoctors()">Search</button>
+      </div>
+    
+      <h1 style="text-align: center;">Doctors</h1>
+      <div class="profiles-list">
+    
+        <div class="profile-card">
+          <img src="images/1.jpg" alt="Doctor Image">
+          <h3>Dr. John Doe</h3>
+          <p>Specialization: Cardiology</p>
+          <p>Experience: 10 years</p>
+          <p>Contact: <a href="tel:+123456789">+123456789</a></p>
+        </div>
+        <div class="profile-card">
+          <img src="images/2.jpg" alt="Doctor Image">
+          <h3>Dr. Michael Lee</h3>
+          <p>Specialization: Neurology</p>
+          <p>Experience: 10 years</p>
+          <p>Contact: <a href="tel:+987654321">+987654321</a></p>
+        </div>
+    
+        <div class="profile-card">
+          <img src="images/3.jpg" alt="Doctor Image">
+          <h3>Dr. Sarah Davis</h3>
+          <p>Specialization: Pediatrics</p>
+          <p>Experience: 12 years</p>
+          <p>Contact: <a href="tel:+345678912">+345678912</a></p>
+        </div>
+        <div class="profile-card">
+          <img src="images/4.jpg" alt="Doctor Image">
+          <h3>Dr.Robert Butler</h3>
+          <p>Specialization: Dermatology</p>
+          <p>Experience: 15 years</p>
+          <p>Contact: <a href="tel:+876543210">+876543210</a></p>
+        </div>
+      </div>
+    </section>
+    <script>
+      function searchDoctors() {
+        let searchInput = document.getElementById("search-input").value.toLowerCase();
+        let profileCards = document.querySelectorAll(".profiles-list .profile-card");
+    
+        profileCards.forEach((card) => {
+          let doctorName = card.querySelector("h3").textContent.toLowerCase();
+          let specialization = card.querySelector("p:nth-child(3)").textContent.toLowerCase();
+    
+          if (doctorName.includes(searchInput) || specialization.includes(searchInput)) {
+            card.style.display = "block";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      }
+    </script>
+
+    <section>
+      <h1 style="text-align: center;"> Staff </h1>
+      <div class="staff-list">
+        <div class="staff-card">
+          <img src="images/6.jpg" alt="Staff Image">
+          <h3>John Smith</h3>
+          <p>Position: Nurse</p>
+          <p>Experience: 8 years</p>
+          <p>Contact: <a href="tel:+123456789">+123456789</a></p>
+        </div>
+        <div class="staff-card">
+          <img src="images/5.jpg" alt="Staff Image">
+          <h3>Emily Johnson</h3>
+          <p>Position: Medical Assistant</p>
+          <p>Experience: 5 years</p>
+          <p>Contact: <a href="tel:+987654321">+987654321</a></p>
+        </div>
+      </section>
+
+      <section class="patient-info-support">
+        <div class="section-heading">
+          <h2 style="font-size: xx-large;">Patient Information and Support</h2>
+        </div>
+        <div class="info-support-content">
+          <div class="info-card">
+            <h3>Visiting Hours</h3>
+            <p>Monday to Friday: 9 AM - 7 PM</p>
+            <p>Saturday and Sunday: 10 AM - 5 PM</p>
+          </div>
+          <div class="info-card">
+            <h3>Appointment Booking</h3>
+            <p>To book an appointment, call: <a href="tel:+123456789">+123456789</a></p>
+          </div>
+          <div class="info-card">
+            <h3>Insurance Information</h3>
+            <p>Learn more about our accepted insurance plans.</p>
+            <a href="insurance.html">Insurance Details</a>
+          </div>
+          <div class="info-card">
+            <h3>FAQs</h3>
+            <p>Find answers to frequently asked questions.</p>
+            <a href="faqs.html">FAQs</a>
+          </div>
+          <div class="info-card">
+            <h3>Patient Guides</h3>
+            <p>Access helpful guides for patients and their families.</p>
+            <a href="patient-guides.html">Patient Guides</a>
+          </div>
+          <div class="info-card">
+            <h3>Support Services</h3>
+            <p>Explore support services available for patients.</p>
+            <a href="support-services.html">Support Services</a>
+          </div>
+        </div>
+      </section>
+      
+    
+    
+
+  </main>
+
+  <footer>
+    <p>&copy; 2023 CareHealthHub.com. All rights reserved.</p>
+  </footer>
+</body>
+</html>

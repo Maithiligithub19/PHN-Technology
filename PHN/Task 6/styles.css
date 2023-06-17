@@ -1,0 +1,434 @@
+/* Reset default browser styles */
+body, h1, h2, p, img {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .header-content {
+    flex: 1;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .subheading {
+    font-size: 16px;
+    margin-top: 10px;
+    
+  }
+  
+  nav {
+    margin-left: auto;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  /* Adjust the styles as needed */
+
+  
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: 250px;
+  }
+  
+  .hero-content {
+    text-align: center;
+  }
+  
+  .hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+  }
+  
+  .about-content {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .about-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .about-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .about-content a {
+    display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+
+.departments {
+  padding: 40px;
+  
+}
+
+
+
+.departments .section-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.departments-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.departments-list li {
+  margin-bottom: 20px;
+}
+
+.departments-list h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.departments-list p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.doctors-staff {
+  padding: 40px;
+}
+
+.doctors-staff .section-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-form input[type="text"] {
+  padding: 10px;
+  width: 300px;
+}
+
+
+.search-form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.profiles-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.profile-card {
+  max-width: 300px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.profile-card p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.patient-info-support {
+  padding: 40px;
+}
+
+
+.patient-info-support .section-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.info-support-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.info-support-content .info-card {
+  flex-basis: calc(33.33% - 50px);
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.info-support-content .info-card:hover{
+  transform: scale(1.02);
+    transition: transform 0.3s ease; }
+
+.info-support-content .info-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.info-support-content .info-card p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.departments .departments-list {
+  display: flex;
+  justify-content: center;
+}
+
+.departments .department-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 30px; 
+}
+
+.departments-list li {
+  margin-bottom: 20px;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+.departments-list li img {
+  max-width: 100px; /* Adjust the maximum width of the image */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.departments-list li h3 {
+  font-size: 18px; /* Adjust the font size of the department title */
+}
+
+.departments-list li p {
+  font-size: 14px; /* Adjust the font size of the department details */
+}
+
+
+.departments-list :hover
+{
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.profiles-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.profile-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  margin: 15px;
+}
+
+.profile-card:hover {
+  transform: scale(1.05);
+}
+
+.profile-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.profile-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.profile-card p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.profile-card a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.profile-card a:hover {
+  color: #666;
+}
+
+
+.staff-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+ 
+}
+
+.staff-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 20%;
+  margin: 15px;
+}
+
+.staff-card:hover {
+  transform: scale(1.05);
+}
+
+.staff-card img {
+  max-width: 100%;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+
+.staff-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.staff-card p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.staff-card a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.staff-card a:hover {
+  color: #666;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* Styles for smaller screens */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-content {
+    margin-top: 20px;
+  }
+
+  nav {
+    margin-top: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}

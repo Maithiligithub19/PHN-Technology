@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>User Account</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container {
+      width: 45%;
+      float: left;
+      margin-right: 5%;
+    }
+
+    .form-container h2 {
+      margin-top: 0;
+    }
+
+    .form-container label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .form-container input[type="submit"] {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #3c4759;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .form-container .signup-link {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .form-container .signup-link a {
+      color: #3c4759;
+      text-decoration: underline;
+    }
+
+    .form-container::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="text-align: center;">TravelEase Travel Booking Website</h1>
+        <hr>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinationlisting.html">Destinations</a></li>
+            <li><a href="booking.html">Bookings</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Travel Options</a>
+              <div class="dropdown-content">
+                <a href="#">Flights</a>
+                <a href="#">Hotels</a>
+                <a href="#">Car Rentals</a>
+                <a href="#">Tours</a>
+              </div>
+            </li>
+          </ul>
+          <form id="search-form" action="#" method="GET">
+            <input type="text" name="destination" placeholder="Enter destination">
+            <input type="date" name="travel-date" placeholder="Travel date">
+            <button type="submit">Search</button>
+          </form>
+        </nav>
+      </header>
+
+  <div class="container">
+    <div class="form-container">
+      <h2>Login</h2>
+      <form action="#" method="post">
+        <label for="loginEmail">Email:</label>
+        <input type="text" id="loginEmail" name="loginEmail" placeholder="Enter your email" required>
+        
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" name="loginPassword" placeholder="Enter your password" required>
+        
+        <input type="submit" value="Login">
+      </form>
+      <div class="signup-link">
+        Don't have an account? Sign up here --></a>
+      </div>
+    </div>
+    
+    <div class="form-container">
+      <h2>Sign Up</h2>
+      <form action="#" method="post">
+        <label for="signupName">Name:</label>
+        <input type="text" id="signupName" name="signupName" placeholder="Enter your name" required>
+        
+        <label for="signupEmail">Email:</label>
+        <input type="text" id="signupEmail" name="signupEmail" placeholder="Enter your email" required>
+        
+        <label for="signupPassword">Password:</label>
+        <input type="password" id="signupPassword" name="signupPassword" placeholder="Enter your password" required>
+        
+        <input type="submit" value="Sign Up">
+    </form>
+  </div>
+
+  <div style="clear:both;">
+</div>
+</div>
+
+<!-- User Dashboard -->
+<div class="dashboard">
+    <div class="container">
+      <h2 style="text-align: center;">User Dashboard</h2>
+
+      <!-- Example Booking Card -->
+      <div class="booking-card">
+        <p>Booking ID: #12345</p>
+        <p>Destination:Goa</p>
+        <p>Date: May 30, 2023</p>
+        <p>Price: $1200</p>
+        <div class="actions">
+          <a href="#">Cancel</a>
+          <a href="#">Modify</a>
+        </div>
+      </div>
+      <hr>
+
+      <div class="booking-card">
+        <p>Booking ID: #67890</p>
+        <p>Destination:Kerala</p>
+        <p>Date: June 15, 2023</p>
+        <p>Price: $1500</p>
+        <div class="actions">
+          <a href="#">Cancel</a>
+          <a href="#">Modify</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+  
+        

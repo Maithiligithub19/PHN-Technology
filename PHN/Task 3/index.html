@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Online Store</title>
+	<style>
+		/* Reset styles */
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		
+		/* Typography */
+		body {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			color: #333;
+		}
+		
+		h1, h2, h3 {
+			font-weight: bold;
+			margin-bottom: 20px;
+			color: #333;
+		}
+		
+		h1 {
+			font-size: 48px;
+			text-align: center;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+		
+		h2 {
+			font-size: 32px;
+			letter-spacing: 1px;
+		}
+		
+		h3 {
+			font-size: 24px;
+		}
+		
+		p {
+			margin-bottom: 20px;
+		}
+		
+		a {
+			color: #333;
+			text-decoration: none;
+			transition: color 0.3s;
+		}
+		
+		a:hover {
+			color: #f00;
+		}
+		
+		/* Layout */
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		
+		nav {
+			background-color: #eee;
+			padding: 20px;
+			margin-bottom: 40px;
+		}
+		
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		nav li {
+			display: inline-block;
+			margin-right: 20px;
+		}
+		
+		nav a {
+			display: inline-block;
+			padding: 10px;
+			font-size: 20px;
+			font-weight: bold;
+			color: #333;
+			transition: background-color 0.3s;
+		}
+		
+		nav a:hover {
+			background-color: #f00;
+			color: #fff;
+		}
+		
+		section {
+			margin-bottom: 40px;
+			padding: 20px;
+			background-color: #f5f5f5;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		}
+		
+		section h2 {
+			font-size: 32px;
+			margin-bottom: 30px;
+			text-align: center;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+		
+		.products {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.products li {
+			flex-basis: calc(33.33% - 20px);
+			margin: 10px;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+			transition: box-shadow 0.3s;
+		}
+		
+		.products li:hover {
+			box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+		}
+		
+		.product {
+			padding: 20px;
+		}
+		
+		.product img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+			margin-bottom: 10px;
+			border-radius: 10px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		}
+		
+		.product h3 {
+			font-size: 24px;
+			margin-bottom: 10px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+		
+		.product p {
+			margin-bottom: 10px;
+		}
+		
+		.product span {
+			font-size: 20px;
+			font-weight: bold;
+			color: #f00;
+		}
+		
+		@media (max-width: 767px) {
+			h1 {
+				font-size: 36px;
+			}
+			
+			nav {
+				display: none;
+			}
+			
+			nav ul {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			
+			nav li {
+				display: block;
+				margin: 10px 0;
+			}
+			
+			.products li {
+				flex-basis: calc(50% - 20px);
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>My Online Store</h1>
+		</div>
+	</header>
+	<nav>
+		<div class="container">
+			<ul>
+				<li><a href="#">Electronics</a></li>
+				<li><a href="#">Clothing</a></li>
+				<li><a href="#">Footwear</a></li>
+				<li><a href="#">Furniture</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<section id="electronics">
+			<h2>Electronics</h2>
+			<ul class="products">
+				<li class="product">
+					<img src="https://via.placeholder.com/300x200.png?text=Product+1" alt="Product 1">
+					<h3>Product 1</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae augue ac elit lacinia imperdiet. Sed volutpat nisi sit amet nibh facilisis, quis malesuada velit bibendum.</p>
+					<span>$99.99</span>
+				</li>
+				<li class="product">
+					<img src="https://via.placeholder.com/300x200.png?text=Product+2" alt="Product 2">
+					<h3>Product 2</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae augue ac elit lacinia imperdiet. Sed volutpat nisi sit amet nibh facilisis, quis malesuada velit bibendum.</p>
+					<span>$149.99</span>
+				</li>
+				<li class="product">
+					<img src="https://via.placeholder.com/300x200.png?text=Product+3" alt="Product 3">
+					<h3>Product 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae augue ac elit lacinia imperdiet. Sed volutpat nisi sit amet nibh facilisis, quis malesuada velit bibendum.</p>
+					<span>$199.99</span>
+				</li>
+			</ul>
+		</section>
+		<section id="clothing">
+			<h2>Clothing</h2>
+			<ul class="products">
+				<li class="product">
+					<img src="https://via.placeholder.com/300x200.png?text=Product+4" alt="Product 4">
+					<h3>Product 4</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae augue ac elit lacinia imperdiet. Sed volutpat nisi sit amet nibh facilisis, quis malesuada velit bibendum.</p>
+					<span>$49.99</span>
+				</li>
+				<li class="product">
+					<img src="https://via.placeholder.com/300x200.png?text=Product+5" alt="Product 5">
+					<h3>Product 5</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae augue ac elit lacinia imperdiet. Sed volutpat nisi sit amet nibh facilisis, quis malesuada velit bibendum.</p>
+					<span>$59.99</span>
+				</li>
+				<li class="product">
+					<img src="https://via.placeholder.com/300x200.png?text=Product+6" alt="Product 6">
+					<h3>Product 6</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae augue ac elit lacinia imperdiet. Sed volutpat nisi sit amet nibh facilisis, quis malesuada velit bibendum.</p>
+					<span>$69.99</span>
+				</li>
+			</ul>
+		</section>
+		<section id="footwear">
+			<h2>Footwear</h2>
+			<ul class="products">
+				<li class="product">
+					<img src="https://via.placeholder.com/300x200.png?text=Product+7" alt="Product 7">
+					<h3>Product 7</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae augue ac elit lacinia imperdiet. Sed volutpat nisi sit amet nibh facilisis, quis malesuada velit bibendum.</p>
+					<span>$79.99</span>
+				</li>
+				<li class="product">
+					<img src="https://via.placeholder.com/300x200.png?text=Product+8" alt="Product 8">
+					<h3>Product 8</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae augue ac elit lacinia imperdiet. Sed volutpat nisi sit amet nibh facilisis, quis malesuada velit bibendum.</p>
+					<span>$89.99</span>
+				</li>
+				<li class="product">
+					<img src="https://via.placeholder.com/300x200.png?text=Product+9" alt="Product 9">
+					<h3>Product 9</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae augue ac elit lacinia imperdiet. Sed volutpat nisi sit amet nibh facilisis, quis malesuada velit bibendum.</p>
+					<span>$99.99</span>
+				</li>
+			</ul>
+		</section>
+		<section id="furniture">
+			<h2>Furniture</h2>
+			<ul class="products">
+				<li class="product">
+					<img src="https://via.placeholder.com/300x200.png?text=Product+10" alt="Product 10">
+					<h3>Product 10</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae augue ac elit lacinia imperdiet. Sed volutpat nisi sit amet nibh facilisis, quis malesuada velit bibendum.</p>
+					<span>$149.99</span>
+				</li>
+				<li class="product">
+					<img src="https://via.placeholder.com/300x200.png?text=Product+11" alt="Product 11">
+					<h3>Product 11</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae augue ac elit lacinia imperdiet. Sed volutpat nisi sit amet nibh facilisis, quis malesuada velit bibendum.</p>
+					<span>$199.99</span>
+				</li>
+				<li class="product">
+					<img src="https://via.placeholder.com/300x200.png?text=Product+12" alt="Product 12">
+					<h3>Product 12</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae augue ac elit lacinia imperdiet. Sed volutpat nisi sit amet nibh facilisis, quis malesuada velit bibendum.</p>
+					<span>$249.99</span>
+				</li>
+			</ul>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 My Online Shop. All rights reserved.</p>
+	</footer>
+</body>
+</html>
+
+
+

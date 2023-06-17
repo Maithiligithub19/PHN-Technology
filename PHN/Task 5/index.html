@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Booking Homepage</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .deals {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 20px;
+    }
+    
+    .deal-card {
+      width: 45%;
+      padding: 20px;
+      background-color: #f2f2f2;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+    
+    .deal-card h3 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 style="text-align: center;">TravelEase Travel Booking Website</h1>
+    <hr>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinationlisting.html">Destinations</a></li>
+        <li><a href="booking.html">Bookings</a></li>
+        <li><a href="account.html">Account</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Travel Options</a>
+          <div class="dropdown-content">
+            <a href="#">Flights</a>
+            <a href="#">Hotels</a>
+            <a href="#">Car Rentals</a>
+            <a href="#">Tours</a>
+          </div>
+        </li>
+      </ul>
+      <form id="search-form" action="#" method="GET">
+        <input type="text" name="destination" placeholder="Enter destination">
+        <input type="date" name="travel-date" placeholder="Travel date">
+        <button type="submit">Search</button>
+      </form>
+    </nav>
+  </header>
+
+  <main>
+    
+    <h2 style="text-align: center;">Popular Destinations</h2>
+    <br>
+    <hr>
+
+     
+    <section class="hero">
+     
+      <div class="destination-card">
+        <img src="images/kashmir.jpeg" alt="Destination 1">
+        <h3>kashmir</h3>
+        <p>Explore the beauty of Kashmir with its stunning landscapes and vibrant culture.</p>
+        
+      </div>
+
+      <div class="destination-card">
+        <img src="images/himachal.jpg" alt="Destination 2">
+        <h3>Himachal</h3>
+        <p>Experience the charm of himachal with its historical sites and delicious cuisine.</p>
+        
+      </div>
+
+      <div class="destination-card">
+        <img src="images/kerla.jpg" alt="Destination 3">
+        <h3>kerala</h3>
+        <p>Immerse yourself in the rich history and cultural heritage of Kerala</p>
+      
+      </div>
+    
+    <div class="destination-card">
+      <img src="images/Y.jpg" alt="Destination 4">
+      <h3>Goa</h3>
+      <p>Experience the beautiful beaches and vibrant nightlife of Goa.</p>
+      
+    </div>
+    <a href="destinationlisting.html" class="btn">view more</a>
+    
+    </section>
+
+    <h2 style="text-align: center;">Deals</h2>
+    <hr>
+
+    <section class="deals">
+      <div class="deal-card">
+        <h3>Deal 1</h3>
+        <p>Grab FLAT 12% OFF* on Domestic Flights with Citi Credit & Debit Cards.</p>
+      </div>
+  
+      <div class="deal-card">
+        <h3>Deal 2</h3>
+        <p>Grab FLAT 14% OFF* up to Rs. 5,000 on 3, 4 & 5-star hotel stays in India. Valid on ICICI Bank Credit Cards</p>
+      </div>
+  
+      <div class="deal-card">
+        <h3>Deal 3</h3>
+        <p>Grab Up to ₹2000 instant discount on Domestic Flights with MakeMyTrip ICICI Bank Credit Cards</p>
+      </div>
+    
+  
+      
+    </section>
+
+    <h2 style="text-align: center;">Featured Travel Packages</h2>
+<hr>
+    <section class="featured-packages">
+     
+  
+      <div class="package-card">
+        <img src="images/pilgrimage-tb1-dt-18072022.jpg" alt="Package 1">
+        <h3>Package 1</h3>
+        <p>For a Peaceful,Spiritual Break</p>
+       
+      </div>
+  
+      <div class="package-card">
+        <img src="images/Couple.jpg" alt="Package 2">
+        <h3>Package 2</h3>
+        <p>Introducing: TravelEase Honeymoon Packages</p>
+        
+      </div>
+
+      <div class="package-card">
+        <img src="images/wildlife-tb-dt-02082022.jpg" alt="Package 3">
+        <h3>Package 3</h3>
+        <p>For a Thrilling Escape into the wildlife</p>
+        
+      </div>
+
+      <div class="package-card">
+        <img src="images/hol-long-weekend-tb-dt-09032023.jpg" alt="Package 4">
+        <h3>Package 4</h3>
+        <p>Presenting Long Weekend Holidyas Mania</p>
+        
+      </div>
+
+      
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Travel Booking Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>

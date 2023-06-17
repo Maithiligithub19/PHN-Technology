@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+  <title>Booking Page</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form-container {
+      width: 40%;
+      float: left;
+      margin-top: 20px;
+    }
+    
+    .payment-container {
+      width: 40%;
+      float: right;
+      padding-left: 20px;
+      margin-top:40px;
+    }
+    
+    .form-container label,
+    .payment-container label {
+      display:flex;
+      margin-bottom: 10px;
+      font-weight: bold;
+      padding: 10px;
+      margin: 10px;
+    }
+    
+    .form-container input[type="text"],.payment-container input[type="text"]
+     {
+      width: 80%;
+      padding: 20px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    .payment-container input[type="submit"] {
+      display: block;
+      width: 80%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #3c4759;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">TravelEase Travel Booking Website</h1>
+        <hr>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinationlisting.html">Destinations</a></li>
+            <li><a href="booking.html">Bookings</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Travel Options</a>
+              <div class="dropdown-content">
+                <a href="#">Flights</a>
+                <a href="#">Hotels</a>
+                <a href="#">Car Rentals</a>
+                <a href="#">Tours</a>
+              </div>
+            </li>
+          </ul>
+          <form id="search-form" action="#" method="GET">
+            <input type="text" name="destination" placeholder="Enter destination">
+            <input type="date" name="travel-date" placeholder="Travel date">
+            <button type="submit">Search</button>
+          </form>
+        </nav>
+      </header>
+
+      
+  <div class="container">
+    <h2 style="text-align: center;">Booking Form</h2>
+      <hr>
+    <div class="form-container">
+      
+      <form action="payment.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Enter your email" required>
+        
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label for="email">Destination:</label>
+        <input type="text" id="email" name="email" placeholder="Enter Destination" required>
+        
+        <label for="requirements">Specific Requirements:</label>
+        <textarea id="requirements" name="requirements" placeholder="Enter any specific requirements" style="width:420px; height:80px;"></textarea>
+        
+      </form>
+    </div>
+    
+    <div class="payment-container">
+      <h2>Payment Details</h2>
+      <form action="process_payment.php" method="post">
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter card number" required>
+        
+        <label for="expiryDate">Expiry Date:</label>
+        <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+        
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
+
+
+        <label for="cardHolderName">Cardholder Name:</label>
+        <input type="text" id="cardHolderName" name="cardHolderName" placeholder="Enter cardholder name" required>
+        
+        <input type="submit" value="Make Payment">
+      </form>
+    </div>
+    
+    <div class="clearfix"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,234 @@
+/* Reset default margin and padding for better layout control */
+body, ul {
+    margin: 0;
+    padding: 0;
+    
+  }
+  body{
+    background-color: #f2f2f2;
+  }
+  /* Style the header and navbar */
+  nav {
+    background-color: #050505;
+    padding: 20px;
+    color: white;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 45px;
+  }
+  
+  .logo-text {
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: white;
+  }
+  
+  .menu li {
+    display: inline-block;
+    margin-left: 40px;
+    color: white;
+  }
+  
+  .menu li a {
+    color: #faf6f6;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .menu li a:hover {
+    color: #cf84ca;
+  }
+  
+  .logo {
+    display: flex; /* Use flexbox to align the logo and text */
+    align-items: center;
+  }
+
+
+
+  /* Reset default margin and padding for better layout control */
+
+  
+  /* Style the story section and box */
+  .story-section {
+   /* Lupus colored background */
+    
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .story-box {
+    display: flex;
+    background-color: #cf84ca; /* Black box background */
+    color: #0d0d0d;
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: #050505 solid 4px;
+  }
+  
+  .story-box img {
+    display: inline-block;
+    vertical-align: middle; /* Vertically align the image */
+    margin-right: 20px; /* Add some spacing between the image and text */
+  }
+  
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .story-box h2 {
+    margin-top: 0; /* Remove default margin */
+    margin-bottom: 10px; /* Add some spacing between the heading and paragraph */
+  }
+  
+  .story-box p {
+    margin-top: 0; /* Remove default margin */
+    font-size: 18px;
+  }
+  
+  
+  /* Style the community hub section and box */
+.community-hub {
+   
+    padding: 40px 0;
+    text-align:center;
+  }
+  
+  .community-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    color: #000;
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+   
+    text-align: center;
+  }
+  
+  .community-box .text-container {
+    text-align: left;
+  }
+  
+  .community-box h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .community-box p {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  
+  .community-box img {
+    display: block;
+    width: 350px;
+  }
+  
+
+  .two-parts-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color:#f2f2f2 ;
+   
+  }
+  
+  .left-part,
+  .right-part {
+    flex: 1;
+    padding:20px;
+    background-color:#f2f2f2 ;
+  }
+  
+  .left-part {
+    border-right: 5px solid #000000; /* Add a vertical partition line */
+    margin-top: 10px;
+  }
+  
+  article{
+    background-color:#cf84ca;
+    border: 1px solid #000000;
+    padding: 10px;
+   
+    margin-top: 10px;
+  }
+  
+  h3 {
+    margin-top: 0;
+  }
+  
+  .teal-color {
+    color: rgb(4, 5, 80); /* Change the color to your desired color */
+  }
+  
+  .update {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .user-info i,
+  .user-info span {
+    font-size: 20px;
+  }
+  
+  .update article {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+  }
+  
+  .update p {
+    margin-bottom: 5px;
+
+  }
+
+  .extra-content {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #b1d2ea;
+  }
+  
+  .extra-content img {
+    width: 200px; /* Adjust the width as per your image size */
+    height: 150px;
+  }
+  
+  .extra-content p {
+    margin: 10px 0;
+    font-size: x-large;
+  }
+  
+  .extra-content button {
+    background-color: rgb(7, 8, 80);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  
