@@ -6,7 +6,7 @@ Projects -
 5. Travel Booking Website (HTML + CSS + JavaScript)
 6. Hospital Website (HTML + CSS Hover effects)
 
-7. # Web Development Projects Collection
+ # Web Development Projects Collection
 
 This repository showcases six different web development projects built using HTML, CSS, and JavaScript. Each project demonstrates various design techniques and coding skills.
 
